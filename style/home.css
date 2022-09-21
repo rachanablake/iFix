@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --blue: #185ADB;
+  --white: #EFEFEF;
+  --yellow: #FFC947;
+  --dark-blue: #0A1931;
+}
+
+.header {
+  width: 90%;
+  margin: auto;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .nav .navigation {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.header .nav .navigation li {
+  padding: 15px;
+}
+.header .nav .navigation li a {
+  text-decoration: none;
+}/*# sourceMappingURL=home.css.map */

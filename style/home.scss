@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Titillium Web', sans-serif;
+}
+:root{
+    --blue: #185ADB;
+    --white: #EFEFEF;
+    --yellow: #FFC947;
+    --dark-blue: #0A1931;
+}
+.header{
+    width: 90%;
+    margin: auto;
+    
+    .nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .navigation{
+            display: flex;
+            align-items: center;
+            list-style: none;
+    
+            li{
+                padding: 15px;
+    
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
