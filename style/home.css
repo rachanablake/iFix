@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Titillium Web", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 :root {
@@ -12,74 +12,84 @@
   --dark-blue: #0A1931;
 }
 
-.header {
-  margin: auto;
-  width: 100%;
+.header .background {
+  width: 100vw;
   height: 80vh;
   background-color: var(--blue);
 }
-.header .nav {
+.header .background .nav {
+  width: 100%;
   margin: auto;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: var(--white);
 }
-.header .nav .navigation {
+.header .background .nav .navigation {
   display: flex;
   align-items: center;
   list-style: none;
 }
-.header .nav .navigation li {
+.header .background .nav .navigation li {
   padding: 15px;
 }
-.header .nav .navigation li a {
+.header .background .nav .navigation li a {
   text-decoration: none;
   color: var(--white);
 }
-.header .button {
-  padding: 10px;
+.header .background .nav .button:hover {
+  color: var(--white);
+  transition: 0.3s;
 }
-.header .header-main {
+.header .background .button .btn {
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+}
+.header .background .content {
   text-align: center;
   color: var(--white);
 }
-.header .header-main .title {
+.header .background .content .title {
   margin: 10px 0;
 }
-.header .header-main .title h1 {
-  font-weight: 5000;
+.header .background .content .title h1 {
+  font-size: 60px;
+  margin: 20px 0;
 }
-.header .header-main .title p {
+.header .background .content .title p {
   width: 40%;
   margin: auto;
 }
-.header .header-main .img {
+.header .background .content .img {
   margin: 10px 0;
   width: 100%;
 }
-.header .header-main .img img {
+.header .background .content .img img {
   width: 55%;
 }
-.header .header-main .download {
+.header .background .content .img .download {
   display: flex;
   justify-content: center;
 }
-.header .header-main .download .appstore {
-  width: 20%;
+.header .background .content .img .download .appstore {
+  width: 15%;
+  margin: 0 25px;
 }
-.header .header-main .download .appstore img {
+.header .background .content .img .download .appstore img {
   width: 100%;
 }
-.header .header-main .download .playstore {
-  width: 20%;
+.header .background .content .img .download .playstore {
+  width: 15%;
+  margin: 0 25px;
 }
-.header .header-main .download .playstore img {
+.header .background .content .img .download .playstore img {
   width: 100%;
 }
 
 .about {
-  margin-top: 400px;
+  width: 100%;
 }
 .about h1 {
   text-align: center;
@@ -90,70 +100,150 @@
   justify-content: space-between;
   align-items: center;
 }
-.about .detail .img {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-}
-.about .detail .img img {
-  width: 50%;
-}
-.about .detail .desc {
-  width: 50%;
-}
-.about .detail .desc p {
-  margin: 30px 0;
-}
-.about .detail .desc .button {
-  border: 1px solid #185ADB;
-  border-radius: 3px;
-  padding: 10px;
-  background: none;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.about .detail .desc .button:hover {
-  background-color: var(--blue);
-  color: var(--white);
-  transition: 0.3s;
-}
 .about .detail-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.about .detail-2 .img {
+.about .detail-2 .desc {
+  width: 50%;
+  font-size: larger;
+  text-align: end;
+}
+.about .img {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-.about .detail-2 .img img {
+.about .img img {
   width: 50%;
 }
-.about .detail-2 .desc {
+.about .desc {
   width: 50%;
-  text-align: end;
+  font-size: larger;
 }
-.about .detail-2 .desc p {
+.about .desc p {
   margin: 30px 0;
 }
-.about .detail-2 .desc .button {
+.about .desc .button {
   border: 1px solid #185ADB;
   border-radius: 3px;
-  padding: 10px;
+  padding: 15px;
   background: none;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s;
 }
-.about .detail-2 .desc .button:hover {
+.about .desc .button:hover {
   background-color: var(--blue);
   color: var(--white);
   transition: 0.3s;
 }
 
+.client .article {
+  text-align: center;
+}
+.client .article p {
+  margin: 25px 0;
+}
+.client .wrapper {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.client .wrapper .slider {
+  width: 80vw;
+  height: 150px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.client .wrapper .slider .slide {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  -webkit-animation: slideshow 60s linear infinite;
+          animation: slideshow 60s linear infinite;
+}
+.client .wrapper .slider .slide img {
+  height: 100px;
+  padding: 0 30px 0 30px;
+}
+@-webkit-keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.client .wrapper .slider::before, .client .wrapper .slider::after {
+  height: 150px;
+  width: 200px;
+  position: absolute;
+  content: "";
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  z-index: 2;
+}
+.client .wrapper .slider::before {
+  left: 0;
+  top: 0;
+}
+.client .wrapper .slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.feedback {
+  width: 100%;
+}
+.feedback .article {
+  text-align: center;
+}
+.feedback .article p {
+  margin: 30px;
+}
+.feedback .colum {
+  margin: 0 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.feedback .colum .user {
+  width: 10%;
+  flex: 50%;
+  margin: 5px;
+  padding: 35px;
+  background-color: #F7F5F2;
+  border: 2px solid #DFDFDE;
+  border-radius: 15px;
+}
+.feedback .colum .user .comment {
+  margin-bottom: 10px;
+}
+.feedback .colum .user .profile {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.feedback .colum .user .profile img {
+  width: 10%;
+  border-radius: 100%;
+}
+.feedback .colum .user .profile h3 {
+  margin: 0 25px;
+}
+
 ::-webkit-scrollbar {
   width: 0px;
-  -ms-overflow-style: none;
 }/*# sourceMappingURL=home.css.map */
