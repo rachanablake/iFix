@@ -12,51 +12,57 @@
     <!-- font---------------------------------------------------------- -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- icon---------------------------------------------------------- -->
     <script src="https://kit.fontawesome.com/3e079aa0e7.js" crossorigin="anonymous"></script>
+
+    <!-- logo icon---------------------------------------------------- -->
+    <link rel="icon" type="image/x-icon" href="./images/logo.ico">
 
 </head>
 <body>
     <!-- header-------------------------------------------------------- -->
     <div class="header">
-        <div class="background">
-            <div class="nav">
-                <div class="navigation">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Catecory</a></li>
-                </div>
-                
-                <div class="logo">
-                    <h1>Hello World</h1>
-                </div>
-        
-                <div class="button">
-                    <input type="button" onclick="darkMode()" class="btn" id="btn" value="Dark Mode">
-                </div>
+        <div class="nav">
+            <div class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Catecory</a></li>
+            </div>
+            
+            <div class="logo">
+                <h1>Hello World</h1>
             </div>
     
-            <div class="content">
-                <div class="title">
-                    <h1>Smart Home <br> Application</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, architecto a totam optio blanditiis tempore non possimus maiores dignissimos ad iure sint ullam qui at ex accusantium voluptates enim minima.</p>
-                </div>
-                <div class="img">
-                    <img src="./images/cover.png" alt="cover">
-    
-                    <div class="download">
-                        <div class="appstore">
-                            <img src="./images/App-Store.svg" alt="AppStore">
-                        </div>
-                        <div class="playstore">
-                            <img src="./images/Play-Store.svg" alt="PlayStore">
-                        </div>
+            <div class="button">
+                <input type="button" class="btn" id="btn" value="Dark Mode">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="title">
+                <h1>Smart Home <br> Application</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, architecto a totam optio blanditiis tempore non possimus maiores dignissimos ad iure sint ullam qui at ex accusantium voluptates enim minima.</p>
+            </div>
+            
+            <div class="img" data-aos="fade-up">
+                <img src="./images/cover.png" alt="cover">
+
+                <div class="download">
+                    <div class="appstore">
+                        <img src="./images/App-Store.svg" alt="AppStore">
+                    </div>
+                    <div class="playstore">
+                        <img src="./images/Play-Store.svg" alt="PlayStore">
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="gotop" id="top">
+        <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
     </div>
 
     <!-- about-------------------------------------------------------------- -->
@@ -64,11 +70,11 @@
         <h1>About Us</h1>
 
         <div class="detail">
-            <div class="img">
+            <div class="img" data-aos="fade-right">
                 <img src="./images/about.png" alt="about">
             </div>
             
-            <div class="desc">
+            <div class="desc" data-aos="fade-left">
                 <h2>Smart Home's Smart Service</h2>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia temporibus<br>
@@ -76,7 +82,7 @@
                     Exercitationem perferendis, corrupti saepe blanditiis voluptates quisquam enim<br>
                     harum.
                 </p>
-                <input type="button" onclick="darkMode()" class="button" id="btn" value="Learn More">
+                <input type="button" class="button" id="btn" value="Learn More">
             </div>
         </div>
 
@@ -90,9 +96,8 @@
                     Exercitationem perferendis, corrupti saepe blanditiis voluptates quisquam enim<br>
                     harum.
                 </p>
-                <input type="button" onclick="darkMode()" class="button" id="btn" value="Learn More">
+                <input type="button" class="button" id="btn" value="Learn More">
             </div>
-
 
             <div class="img">
                 <img src="./images/about.png" alt="about">
@@ -113,6 +118,36 @@
         </div>
         
         <div class="wrapper">
+            <div class="slider">
+                <div class="slide">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                </div>
+                
+                <div class="slide">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                    <img src="./images/client.svg" alt="client">
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper-bt">
             <div class="slider">
                 <div class="slide">
                     <img src="./images/client.svg" alt="client">
@@ -164,7 +199,7 @@
                 </div>
                 <div class="profile">
                     <img src="./images/me.jpg" alt="Profile">
-                    <h3>Rachana Blake</h3>
+                    <p>Rachana Blake</p>
                 </div>
             </div>
     
@@ -176,7 +211,7 @@
                 </div>
                 <div class="profile">
                     <img src="./images/me.jpg" alt="Profile">
-                    <h3>Rachana Blake</h3>
+                    <p>Rachana Blake</p>
                 </div>
             </div>
         </div>
@@ -190,7 +225,7 @@
                 </div>
                 <div class="profile">
                     <img src="./images/me.jpg" alt="Profile">
-                    <h3>Rachana Blake</h3>
+                    <p>Rachana Blake</p>
                 </div>
             </div>
     
@@ -202,10 +237,118 @@
                 </div>
                 <div class="profile">
                     <img src="./images/me.jpg" alt="Profile">
-                    <h3>Rachana Blake</h3>
+                    <p>Rachana Blake</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="fqa">
+        <div class="title">
+            <h1>FQA's</h1>
+        </div>
+
+        <div class="wrapper">
+            <div class="accordion">
+                <div class="item">
+                    <input type="checkbox" id="one" name="item">
+                    <label for="one" class="title">Where are you from?</label>
+                    <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="two" name="item">
+                    <label for="two" class="title">Where are you from?</label>
+                    <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="three" name="item">
+                    <label for="three" class="title">Where are you from?</label>
+                    <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="four" name="item">
+                    <label for="four" class="title">Where are you from?</label>
+                    <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+                <div class="item">
+                    <input type="checkbox" id="five" name="item">
+                    <label for="five" class="title">Where are you from?</label>
+                    <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="application">
+        <div class="article">
+            <div class="title">
+                <h1>Download <br> App</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae repellendus, possimus consequatur adipisci qui quasi repudiandae modi eius veniam delectus neque praesentium quos, dolorum amet vel perspiciatis placeat tempore officiis.</p>
+            </div>
+            <div class="img">
+                <div class="appstore">
+                    <img src="./images/App-Store.svg" alt="AppStore">
+                </div>
+                <div class="playstore">
+                    <img src="./images/Play-Store.svg" alt="PlayStore">
+                </div>
+            </div>
+        </div>
+        <div class="img">
+            <img src="./images/about.png" alt="download us">
+        </div>
+    </div>
+
+    <div class="subscribe">
+        <div class="content">
+            <div class="text">
+                <h2>Subscribe to get updated</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat neque minima aperiam, excepturi molestias sequi quo explicabo, vero quod officia autem soluta, ullam minus suscipit quidem. Voluptates cum dolor assumenda!</p>
+            </div>
+            <input type="button" class="button" id="btn" value="Subscribe Now">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="colum1">
+            <h2>Hello World</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia ut qui blanditiis error minima optio!</p>
+            <div class="form">
+                <input type="email" placeholder="name@email.com" class="txtbox">
+                <input type="submit" class="button" id="btn" value="Register">
+            </div>
+        </div>
+        <div class="categories">
+            <h2>Categories</h2>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+        </div>
+        <div class="about-us">
+            <h2>About</h2>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Lorem ipsum</a>
+        </div>
+        <div class="follow-us">
+            <h2>Follow Us</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+            <a href="#">Linkin</a>
+        </div>
+    </div>
+
+    <div class="copy-right">
+        <p>Copyright © 2022 all rights reserved <a href="https://www.facebook.com/RachanaBlake/" target="_blank">Rachana Blake</a></p>
+    </div>
 </body>
+
+<!-- script ------------------------------------------------------------------ -->
+<script src="./style/home.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
