@@ -5,6 +5,7 @@
 
     // font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-family: 'Poppins', sans-serif;
+    // font-family: "Titillium Web",RazerF5,Arial,Helvetica,sans-serif;
 }
 
 :root{
@@ -20,7 +21,6 @@ body{
 
     .header{
         width: 100vw;
-        height: 1000px;
         background-color: var(--blue);
     
         .nav{
@@ -35,9 +35,10 @@ body{
             color: var(--white);
     
             .navigation{
+                width: 270px;
                 display: flex;
                 align-items: center;
-                // float: left;
+
                 list-style: none;
         
                 li{
@@ -49,31 +50,43 @@ body{
                     }
                 }
             }
-    
-            .button:hover{
-                color: var(--white);
-                transition: 0.3s;
-            }
+        }
+
+        .logo{
+            width: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     
         .button{
+            width: 270px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
             .btn{
                 padding: 15px;
                 border: none;
                 font-weight: bold;
+                cursor: pointer;
             }
         }
-    
-        .content{
-            text-align: center;
-            color: var(--white);
-    
+    }
+
+    .content{
+        text-align: center;
+
+        .background{
+            background-color: var(--blue);
+            height: 80vh;
+
             .title{
-                margin: 10px 0;
+                // margin: 10px 0;
+                color: var(--white);
     
                 h1{
                     font-size: 60px;
-                    margin: 20px 0;
+                    // margin: 20px 0;
                 }
     
                 p{
@@ -85,6 +98,7 @@ body{
             .img{
                 margin: 10px 0;
                 width: 100%;
+                height: 500px;
     
                 img{
                     width: 55%;
@@ -137,13 +151,15 @@ body{
     
     // About--------------------------------------------------------------------------------
     .about{
-        margin: var(--space);
+        margin-top: 500px;
+
         h2{
             font-size: 50px;
             font-weight: bolder;
         }
     
         h1{
+            margin-top: 50px;
             text-align: center;
             font-size: 100px;
         }
@@ -233,6 +249,7 @@ body{
             justify-content: center;
     
             .slider{
+                margin-top: 2   5px;
                 .slide {
                     animation: buttom 60s linear infinite;
                 }
@@ -259,7 +276,7 @@ body{
                 animation: slideshow 60s linear infinite;
 
                 img {
-                    height: 100px;
+                    height: 100%;
                     padding: 0 30px 0 30px;
                 }
             }
@@ -379,7 +396,7 @@ body{
             input{
                 position: absolute;
                 opacity: 0;
-                z-index: -1;
+                // z-index: -1;
             }
         
             .accordion{
@@ -417,6 +434,7 @@ body{
                 padding: 0 30px;
                 max-height: 0;
                 transition: all 0.25s;
+                text-align: left;
             }
     
             input:checked + .title:after{
@@ -445,7 +463,6 @@ body{
 
                 h1{
                     font-size: 100px;
-                    font-weight: bold;
                 }
 
                 p{
@@ -469,7 +486,7 @@ body{
     
                 .playstore{
                     width: 50%;
-                    margin: 0 25px;
+                    margin-left: 50px;
     
                     img{
                         width: 100%;
@@ -508,6 +525,7 @@ body{
         color: var(--white);
 
         .text{
+            text-align: left;
             width: 70%;
             p{
                 margin-top: 15px;
@@ -556,6 +574,7 @@ body{
         // font-weight: bold;
         display: flex;
         transition: 0.5s;
+        margin: 15px 0;
     }
 
     // a::after{
