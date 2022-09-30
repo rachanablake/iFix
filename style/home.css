@@ -53,6 +53,7 @@ body .header .button {
   justify-content: flex-end;
 }
 body .header .button .btn {
+  width: 40%;
   padding: 15px;
   border: none;
   font-weight: bold;
@@ -114,6 +115,12 @@ body .gotop a i {
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+}
+body .gotop a i::before {
+  display: flex;
+}
+body .gotop a i::after {
+  display: none;
 }
 body .about {
   margin-top: 500px;
@@ -197,7 +204,7 @@ body .client .wrapper-bt {
   justify-content: center;
 }
 body .client .wrapper-bt .slider {
-  margin-top: 2 5px;
+  margin-top: 30px;
 }
 body .client .wrapper-bt .slider .slide {
   -webkit-animation: buttom 60s linear infinite;
