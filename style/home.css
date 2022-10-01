@@ -14,11 +14,16 @@
   --space: 200px 0;
 }
 
-body .header {
-  width: 100vw;
+.header {
+  width: 100%;
   background-color: var(--blue);
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+  z-index: 3;
 }
-body .header .nav {
+.header .nav {
   width: 100%;
   margin: auto;
   padding: 15px;
@@ -27,144 +32,127 @@ body .header .nav {
   justify-content: space-between;
   color: var(--white);
 }
-body .header .nav .navigation {
+.header .nav .navigation {
   width: 270px;
   display: flex;
   align-items: center;
   list-style: none;
 }
-body .header .nav .navigation li {
+.header .nav .navigation li {
   padding: 15px;
 }
-body .header .nav .navigation li a {
+.header .nav .navigation li a {
   text-decoration: none;
   color: var(--white);
 }
-body .header .logo {
+.header .logo {
   width: 270px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .header .button {
+.header .button {
   width: 270px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-body .header .button .btn {
+.header .button .btn {
   width: 40%;
   padding: 15px;
   border: none;
   font-weight: bold;
   cursor: pointer;
 }
-body .content {
+
+.content {
   text-align: center;
 }
-body .content .background {
+.content .background {
   background-color: var(--blue);
   height: 80vh;
 }
-body .content .background .title {
+.content .background .title {
   color: var(--white);
 }
-body .content .background .title h1 {
+.content .background .title h1 {
   font-size: 60px;
 }
-body .content .background .title p {
+.content .background .title p {
   width: 40%;
   margin: auto;
 }
-body .content .background .img {
+.content .background .img {
   margin: 10px 0;
   width: 100%;
   height: 500px;
 }
-body .content .background .img img {
+.content .background .img img {
   width: 55%;
 }
-body .content .background .img .download {
+.content .background .img .download {
   display: flex;
   justify-content: center;
   margin: 50px 0;
 }
-body .content .background .img .download .appstore {
+.content .background .img .download .appstore {
   width: 15%;
   margin: 0 25px;
 }
-body .content .background .img .download .appstore img {
+.content .background .img .download .appstore img {
   width: 100%;
 }
-body .content .background .img .download .playstore {
+.content .background .img .download .playstore {
   width: 15%;
   margin: 0 25px;
 }
-body .content .background .img .download .playstore img {
+.content .background .img .download .playstore img {
   width: 100%;
 }
-body .gotop {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-}
-body .gotop a i {
-  color: var(--white);
-  background-color: var(--blue);
-  padding: 15px 18px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-}
-body .gotop a i::before {
-  display: flex;
-}
-body .gotop a i::after {
-  display: none;
-}
-body .about {
+
+.about {
   margin-top: 500px;
 }
-body .about h2 {
+.about h2 {
   font-size: 50px;
   font-weight: bolder;
 }
-body .about h1 {
+.about h1 {
   margin-top: 50px;
   text-align: center;
   font-size: 100px;
 }
-body .about .detail {
+.about .detail {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .about .detail-2 {
+.about .detail-2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-body .about .detail-2 .desc {
+.about .detail-2 .desc {
   width: 50%;
   font-size: larger;
   text-align: end;
 }
-body .about .img {
+.about .img {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-body .about .img img {
+.about .img img {
   width: 50%;
 }
-body .about .desc {
+.about .desc {
   width: 50%;
   font-size: larger;
 }
-body .about .desc p {
+.about .desc p {
   margin: 30px 0;
 }
-body .about .desc .button {
+.about .desc .button {
   border: 1px solid var(--blue);
   border-radius: 5px;
   padding: 15px 23px;
@@ -173,40 +161,41 @@ body .about .desc .button {
   font-weight: bold;
   transition: 0.3s;
 }
-body .about .desc .button:hover {
+.about .desc .button:hover {
   background-color: var(--blue);
   color: var(--white);
   transition: 0.3s;
 }
-body .client {
+
+.client {
   margin: var(--space);
 }
-body .client .article {
+.client .article {
   text-align: center;
 }
-body .client .article h1 {
+.client .article h1 {
   font-size: 100px;
 }
-body .client .article p {
+.client .article p {
   margin: 25px 0;
   font-size: larger;
 }
-body .client .wrapper {
+.client .wrapper {
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .client .wrapper-bt {
+.client .wrapper-bt {
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .client .wrapper-bt .slider {
+.client .wrapper-bt .slider {
   margin-top: 30px;
 }
-body .client .wrapper-bt .slider .slide {
+.client .wrapper-bt .slider .slide {
   -webkit-animation: buttom 60s linear infinite;
           animation: buttom 60s linear infinite;
 }
@@ -226,7 +215,7 @@ body .client .wrapper-bt .slider .slide {
     transform: translateX(-100%);
   }
 }
-body .client .slider {
+.client .slider {
   width: 80vw;
   height: 150px;
   position: relative;
@@ -235,14 +224,14 @@ body .client .slider {
   -webkit-animation-name: top;
           animation-name: top;
 }
-body .client .slider .slide {
+.client .slider .slide {
   height: 150px;
   display: flex;
   align-items: center;
   -webkit-animation: slideshow 60s linear infinite;
           animation: slideshow 60s linear infinite;
 }
-body .client .slider .slide img {
+.client .slider .slide img {
   height: 100%;
   padding: 0 30px 0 30px;
 }
@@ -262,7 +251,7 @@ body .client .slider .slide img {
     transform: translateX(-100%);
   }
 }
-body .client .slider::before, body .client .slider::after {
+.client .slider::before, .client .slider::after {
   height: 150px;
   width: 200px;
   position: absolute;
@@ -270,35 +259,36 @@ body .client .slider::before, body .client .slider::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   z-index: 2;
 }
-body .client .slider::before {
+.client .slider::before {
   left: 0;
   top: 0;
 }
-body .client .slider::after {
+.client .slider::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
-body .feedback {
+
+.feedback {
   margin: var(--space);
 }
-body .feedback .article {
+.feedback .article {
   text-align: center;
 }
-body .feedback .article h1 {
+.feedback .article h1 {
   font-size: 100px;
 }
-body .feedback .article p {
+.feedback .article p {
   margin: 30px;
   font-size: large;
 }
-body .feedback .colum {
+.feedback .colum {
   margin: 0 200px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-body .feedback .colum .user {
+.feedback .colum .user {
   width: 10%;
   flex: 50%;
   margin: 5px;
@@ -308,59 +298,61 @@ body .feedback .colum .user {
   border-radius: 15px;
   transition: 0.3s;
 }
-body .feedback .colum .user .comment {
+.feedback .colum .user .comment {
   margin-bottom: 10px;
 }
-body .feedback .colum .user .profile {
+.feedback .colum .user .profile {
   display: flex;
   align-items: center;
   margin-top: 50px;
 }
-body .feedback .colum .user .profile img {
+.feedback .colum .user .profile img {
   width: 7%;
   border-radius: 100%;
 }
-body .feedback .colum .user .profile p {
+.feedback .colum .user .profile p {
   font-weight: bold;
   margin: 0 25px;
 }
-body .feedback .colum .user:hover {
+.feedback .colum .user:hover {
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 15px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
 }
-body .fqa {
+
+.fqa {
   margin: var(--space);
 }
-body .fqa .title {
+.fqa .title {
   text-align: center;
 }
-body .fqa .title h1 {
+.fqa .title h1 {
   font-size: 100px;
 }
-body .fqa .wrapper {
+.fqa .wrapper {
   margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .fqa .wrapper input {
+.fqa .wrapper input {
   position: absolute;
   opacity: 0;
+  z-index: -1;
 }
-body .fqa .wrapper .accordion {
+.fqa .wrapper .accordion {
   width: 40%;
   overflow: hidden;
 }
-body .fqa .wrapper .item {
+.fqa .wrapper .item {
   margin-bottom: 20px;
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #DFDFDE;
 }
-body .fqa .wrapper .title {
+.fqa .wrapper .title {
   background: #F7F5F2;
   display: flex;
   padding: 30px;
@@ -369,70 +361,71 @@ body .fqa .wrapper .title {
   cursor: pointer;
   font-size: 18px;
 }
-body .fqa .wrapper .title::after {
+.fqa .wrapper .title::after {
   content: "❯";
   width: 1em;
   height: 1em;
   text-align: center;
   transition: all 0.3s;
 }
-body .fqa .wrapper .content {
+.fqa .wrapper .content {
   background: #F7F5F2;
   padding: 0 30px;
   max-height: 0;
   transition: all 0.25s;
   text-align: left;
 }
-body .fqa .wrapper input:checked + .title:after {
+.fqa .wrapper input:checked + .title:after {
   transform: rotate(90deg);
   background: #F7F5F2;
 }
-body .fqa .wrapper input:checked ~ .content {
+.fqa .wrapper input:checked ~ .content {
   max-height: 100vh;
   padding: 1em;
 }
-body .application {
+
+.application {
   width: 100%;
   display: flex;
   align-items: center;
 }
-body .application .article {
+.application .article {
   width: 50%;
 }
-body .application .article .title {
+.application .article .title {
   margin: 0 150px;
 }
-body .application .article .title h1 {
+.application .article .title h1 {
   font-size: 100px;
 }
-body .application .article .title p {
+.application .article .title p {
   font-size: larger;
   margin: 50px 0;
 }
-body .application .article .img {
+.application .article .img {
   display: flex;
   justify-content: center;
   margin-left: 150px;
 }
-body .application .article .img .appstore {
+.application .article .img .appstore {
   width: 50%;
 }
-body .application .article .img .appstore img {
+.application .article .img .appstore img {
   width: 100%;
 }
-body .application .article .img .playstore {
+.application .article .img .playstore {
   width: 50%;
   margin-left: 50px;
 }
-body .application .article .img .playstore img {
+.application .article .img .playstore img {
   width: 100%;
 }
-body .application .img {
+.application .img {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-body .application .img img {
+.application .img img {
   width: 50%;
 }
 
@@ -494,6 +487,15 @@ body .application .img img {
   transition: 0.5s;
   margin: 15px 0;
 }
+.footer a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  transition: 0.5s;
+  margin: left;
+  display: block;
+  background-color: var(--blue);
+}
 .footer .colum1 {
   width: 30%;
 }
@@ -532,6 +534,20 @@ body .application .img img {
   width: 20%;
 }
 
+.gotop {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+.gotop a i {
+  color: var(--white);
+  background-color: var(--blue);
+  padding: 15px 18px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
 .copy-right {
   width: 100%;
   height: 80px;
@@ -542,7 +558,8 @@ body .application .img img {
   background-color: var(--dark-blue);
 }
 .copy-right a {
-  color: var(--white);
+  text-decoration: none;
+  color: var(--blue);
 }
 
 ::-webkit-scrollbar {

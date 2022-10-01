@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css----------------------------------------------------------- -->
-    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/service.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- font---------------------------------------------------------- -->
@@ -16,23 +16,24 @@
 
     <!-- icon---------------------------------------------------------- -->
     <script src="https://kit.fontawesome.com/3e079aa0e7.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 
     <!-- logo icon---------------------------------------------------- -->
     <link rel="icon" type="image/x-icon" href="./images/logo.ico">
 
-    <title>iFix</title>
+    <title>iFix Mobile</title>
 </head>
 <body>
     <div class="header">
-        <div class="nav">
+        <div class="nav" id="scrolled">
             <div class="navigation">
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="#">Service</a></li>
+                <li><a href="./service.html">Service</a></li>
                 <li><a href="#">Catecory</a></li>
             </div>
             
             <div class="logo">
-                <h1>Hello World</h1>
+                <h1>iFix Mobile</h1>
             </div>
     
             <div class="button">
@@ -40,5 +41,80 @@
             </div>
         </div>
     </div>
+
+    <div class="header-content">
+
+        <div class="left" data-aos="fade-up" data-aos-delay="200">
+            <div class="title">
+                <h1>Great way to verify caller</h1>
+            </div>
+
+            <div class="form">
+                <input type="email" placeholder="name@email.com" class="txtbox">
+                <input type="submit" class="button" id="btn" value="Register">
+            </div>
+
+            <div class="decsc">
+                <p>We care about protection your data. <br> Here's our <span>Privacy Policy.</span></p>
+            </div>
+        </div>
+
+        <div class="mid" data-aos="fade-up" data-aos-delay="180">
+            <img src="./images/about1.png" alt="Mobile Phone">
+        </div>
+
+        <div class="right" data-aos="fade-up" data-aos-delay="200">
+            <div class="title">
+                <h1>Keeping you secure</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, voluptatibus,
+                    tempora cumque autem adipisci aliquid voluptate beatae magni quod non suscipit
+                    esse deserunt totam, doloremque enim facilis numquam itaque illum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="feature">
+        <div class="title">
+            <p>How it works</p>
+            <h2>Best Features to Help You</h2>
+        </div>
+
+        <div class="content">
+            <div class="item">
+                <i class="fa-solid fa-address-card"></i>
+                <h1>Caller ID</h1>
+                <p>Recognize unknown numbers before answering!</p>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-phone"></i>
+                <h1>Smart Caller</h1>
+                <p>Always contact the right people! with fastest than another service</p>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-user-shield"></i>
+                <h1>Block Spam</h1>
+                <p>Block numbers, telemarketers and robots</p>
+            </div>
+
+            <div class="item">
+                <i class="fa-solid fa-comments"></i>
+                <h1>All In One</h1>
+                <p>No need to switch, we manage your communications</p>
+            </div>
+        </div>
+    </div>
 </body>
+
+<!-- script ------------------------------------------------------------------ -->
+<script src="./style/home.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </html>
