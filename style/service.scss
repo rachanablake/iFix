@@ -203,14 +203,18 @@
                 color: var(--blue);
             }
 
-            h1{
-                margin: 15px 0;
-            }
+            .text{
+                // display: flex;
 
-            p{
-                margin: 0 10px;
+                h1{
+                    margin: 15px 0;
+                }
+    
+                p{
+                    margin: 0 10px;
+                }
+    
             }
-
         }
 
         .item:hover{
@@ -230,31 +234,52 @@
 
 .staff{
     width: 100%;
+    padding: 40px 0;
+    // background-color: var(--yellow);
+
+    margin: var(--space);
 
     .header-staff{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-size: larger;
+
+        padding: 15px;
     }
 
     .content-staff{
-        
+        display: flex;
+
         .item{
-            // width: 30%;
-            padding: 15px;
+            width: 30%;
+            padding: 20px;
+            margin: 15px;
+
             background-color: var(--blue);
+            color: var(--white);
 
             .img{
-                width: 30%;
+                width: 100%;
                 
                 img{
                     width: 100%;
                 }
             }
 
-            .title{
-                width: 20%;
+            .tittle{
+                // width: 100%;
+                margin-top: 20px;
+
+                h1{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
             }
+        }
+
+        .item:hover{
+            box-shadow: 0px 0px 7px 0px rgba(0,0,0,0);
         }
     }
 }
