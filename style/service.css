@@ -18,7 +18,7 @@
 }
 .header .nav {
   width: 100%;
-  height: 100px;
+  height: 85px;
   margin: auto;
   padding: 15px;
   display: flex;
@@ -201,6 +201,9 @@
   margin: 30px 0;
   padding: 15px;
 }
+.staff .header-staff h1 {
+  text-align: justify;
+}
 .staff .content-staff {
   display: flex;
 }
@@ -235,7 +238,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 100px;
 }
 .story .story-content {
@@ -257,22 +260,26 @@
 
 .download {
   width: 70%;
-  height: 400px;
+  height: 525px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 100px;
   background-color: var(--blue);
   color: var(--white);
 }
 .download .download-text {
   width: 50%;
+  margin: auto;
+  margin-left: 35px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.download .download-text p {
+  margin: 25px 0;
 }
 .download .download-text .button {
   width: 400px;
@@ -282,6 +289,7 @@
 .download .download-text .button .btn {
   padding: 15px;
   border: none;
+  border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -293,7 +301,7 @@
   justify-content: center;
 }
 .download .download-img img {
-  width: 50%;
+  background-size: cover;
 }
 
 .footer {
@@ -312,17 +320,12 @@
   color: var(--dark-blue);
   text-decoration: none;
   display: flex;
-  transition: 0.5s;
+  transition: 0.3s;
   margin: 15px 0;
 }
-.footer a::after {
-  content: "";
-  width: 0;
-  height: 2px;
-  transition: 0.5s;
-  margin: left;
-  display: block;
-  background-color: var(--blue);
+.footer a :hover {
+  color: var(--blue);
+  transition: 0.3s;
 }
 .footer .colum1 {
   width: 30%;
@@ -383,5 +386,10 @@
 @media screen and (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+}
+@media only screen and (max-width: 2500px) {
+  .download .download-img img {
+    width: 50%;
   }
 }/*# sourceMappingURL=service.css.map */

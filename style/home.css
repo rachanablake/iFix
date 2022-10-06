@@ -461,8 +461,8 @@
   transition: 0.3s;
 }
 .subscribe .content .button:hover {
-  background-color: var(--white);
-  border: 1px solid var(--white);
+  background-color: var(--yellow);
+  border: 1px solid var(--yellow);
   color: var(--blue);
   transition: 0.3s;
 }
@@ -474,6 +474,7 @@
   align-items: stretch;
   justify-content: space-between;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .footer h2 {
   font-size: 40px;

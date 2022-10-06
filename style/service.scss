@@ -348,14 +348,16 @@
 
     .download-text{
         width: 50%;
+        margin: auto;
 
-        text-align: left;
+        // text-align: left;
+        margin-left: 35px;
 
         display: flex;
         flex-direction: column;
 
         p{
-            margin: 35px 0;
+            margin: 25px 0;
         }
 
         .button{
@@ -366,6 +368,7 @@
             .btn{
                 padding: 15px;
                 border: none;
+                border-radius: 5px;
                 font-weight: bold;
                 cursor: pointer;
             }
@@ -381,7 +384,8 @@
         justify-content: center;
 
         img{
-            width: 50%;
+            // width: 65%;
+            background-size: cover;
         }
     }
 }
@@ -487,5 +491,15 @@
 @media screen and (prefers-reduced-motion: no-preference) {
     html {
       scroll-behavior: smooth;
+    }
+}
+
+@media only screen and (max-width: 2500px) {
+    .download{
+        .download-img{
+            img{
+                width: 50%;
+            }
+        }
     }
 }
