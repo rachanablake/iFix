@@ -15,20 +15,20 @@
 
 .header {
   width: 100%;
-  background-color: var(--blue);
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: top 0.3s;
-  z-index: 3;
 }
 .header .nav {
   width: 100%;
+  height: 100px;
   margin: auto;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: top 0.3s;
+  background-color: var(--blue);
   color: var(--white);
 }
 .header .nav .navigation {
@@ -63,73 +63,79 @@
   font-weight: bold;
   cursor: pointer;
 }
-
-.header-content {
+.header .header-content {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--blue);
   color: var(--white);
 }
-.header-content .left {
+.header .header-content .left {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.header-content .left h1 {
+.header .header-content .left .title h1 {
   font-size: 85px;
-  text-align: right;
 }
-.header-content .left .form {
+.header .header-content .left .form {
+  width: 60%;
   margin: 50px 0;
   margin-top: 25px;
 }
-.header-content .left .form .txtbox {
+.header .header-content .left .form .txtbox {
   width: 100%;
+  height: 40px;
+  padding: 0 10px;
   background-color: #F7F5F2;
   border: 1px solid #DFDFDE;
-  padding: 10px;
   border-radius: 5px;
 }
-.header-content .left .form .button {
+.header .header-content .left .form .button {
   width: 100%;
-  background: var(--yellow);
-  border: none;
-  padding: 10px 15px;
-  color: var(--white);
+  height: 40px;
   border-radius: 5px;
-  cursor: pointer;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  background: var(--yellow);
+  color: var(--white);
+  border: none;
   transition: 0.3s;
 }
-.header-content .left .form .button:hover {
+.header .header-content .left .form .button:hover {
   box-shadow: 0px 0px 5px 0px rgb(255, 201, 71);
   transition: 0.3s;
 }
-.header-content .left .decsc p {
+.header .header-content .left .decsc p {
   text-align: center;
 }
-.header-content .left .decsc p span {
+.header .header-content .left .decsc p span {
   font-weight: bold;
   cursor: pointer;
 }
-.header-content .mid {
+.header .header-content .mid {
   width: 30%;
+  height: auto;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
 }
-.header-content .mid img {
-  width: 55%;
-  transform: rotate(15deg);
+.header .header-content .mid img {
+  width: 60%;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.header-content .right {
+.header .header-content .right {
   width: 30%;
   display: flex;
 }
-.header-content .right h1 {
+.header .header-content .right h1 {
   font-size: 85px;
 }
 
@@ -147,8 +153,8 @@
   justify-content: center;
 }
 .feature .content .item {
-  width: 15%;
-  height: 300px;
+  width: 300px;
+  height: 350px;
   margin: 0 15px;
   display: flex;
   align-items: center;
@@ -169,6 +175,8 @@
 }
 .feature .content .item .text p {
   margin: 0 10px;
+  height: 75px;
+  overflow: hidden;
 }
 .feature .content .item:hover {
   color: var(--white);
@@ -182,15 +190,15 @@
 }
 
 .staff {
-  width: 100%;
-  padding: 40px 0;
-  margin: var(--space);
+  width: 90%;
+  margin: auto;
 }
 .staff .header-staff {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: larger;
+  margin: 30px 0;
   padding: 15px;
 }
 .staff .content-staff {
@@ -202,6 +210,7 @@
   margin: 15px;
   background-color: var(--blue);
   color: var(--white);
+  border-radius: 5px;
 }
 .staff .content-staff .item .img {
   width: 100%;
@@ -220,6 +229,159 @@
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0);
 }
 
+.story {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.story .story-content {
+  font-size: 22px;
+}
+.story .story-content h1 {
+  font-size: 60px;
+}
+.story .story-content p {
+  margin: 25px 0;
+}
+.story .story-img {
+  display: flex;
+  justify-content: flex-end;
+}
+.story .story-img img {
+  width: 70%;
+}
+
+.download {
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.download .download-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download .download-text .button {
+  width: 400px;
+  display: flex;
+  justify-content: flex-start;
+}
+.download .download-text .button .btn {
+  padding: 15px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.download .download-img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.download .download-img img {
+  width: 50%;
+}
+
+.footer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.footer h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.footer a {
+  color: var(--dark-blue);
+  text-decoration: none;
+  display: flex;
+  transition: 0.5s;
+  margin: 15px 0;
+}
+.footer a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  transition: 0.5s;
+  margin: left;
+  display: block;
+  background-color: var(--blue);
+}
+.footer .colum1 {
+  width: 30%;
+}
+.footer .colum1 .form {
+  margin-top: 25px;
+}
+.footer .colum1 .form .txtbox {
+  background-color: #F7F5F2;
+  border: 1px solid #DFDFDE;
+  padding: 10px;
+  border-radius: 5px;
+}
+.footer .colum1 .form .button {
+  background: none;
+  border: 1px solid var(--dark-blue);
+  padding: 10px 15px;
+  color: var(--dark-blue);
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+.footer .colum1 .form .button:hover {
+  background-color: var(--blue);
+  border: 1px solid var(--blue);
+  color: var(--white);
+  transition: 0.3s;
+}
+.footer .categories {
+  width: 20%;
+}
+.footer .about-us {
+  width: 20%;
+}
+.footer .folllow-us {
+  width: 20%;
+}
+
+.copy-right {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--dark-blue);
+}
+.copy-right a {
+  text-decoration: none;
+  color: var(--blue);
+}
+
 ::-webkit-scrollbar {
   width: 0px;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }/*# sourceMappingURL=service.css.map */

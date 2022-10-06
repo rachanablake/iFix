@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    // font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-family: 'Poppins', sans-serif;
-    // font-family: "Titillium Web",RazerF5,Arial,Helvetica,sans-serif;
 }
 
 :root{
@@ -534,8 +532,8 @@ margin-bottom: 100px;
     }
 
     .button:hover{
-        background-color: var(--yellow);
-        border: 1px solid var(--yellow);
+        background-color: var(--white);
+        border: 1px solid var(--white);
         color: var(--blue);
 
         transition: 0.3s;
@@ -551,7 +549,6 @@ margin-bottom: 100px;
     justify-content: space-between;
 
     margin-top: 100px;
-    margin-bottom: 100px;
 
     h2{
         font-size: 40px;
