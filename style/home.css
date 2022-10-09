@@ -171,6 +171,7 @@
 .content .background .img .download .appstore {
   width: 15%;
   margin: 0 25px;
+  cursor: pointer;
 }
 .content .background .img .download .appstore img {
   width: 100%;
@@ -178,6 +179,7 @@
 .content .background .img .download .playstore {
   width: 15%;
   margin: 0 25px;
+  cursor: pointer;
 }
 .content .background .img .download .playstore img {
   width: 100%;
@@ -207,6 +209,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 100px 0;
 }
 .about .detail-2 .desc {
   width: 50%;
@@ -216,13 +219,18 @@
 .about .detail-2 .desc p {
   margin: 30px 0 30px 70px;
 }
+.about .detail-2 .img {
+  margin-left: 100px;
+  display: flex;
+  justify-content: flex-start;
+}
 .about .img {
   width: 50%;
   display: flex;
   justify-content: center;
 }
 .about .img img {
-  width: 50%;
+  width: 80%;
 }
 .about .desc {
   width: 50%;
@@ -437,6 +445,8 @@
   font-weight: bold;
   cursor: pointer;
   font-size: 18px;
+  font-family: "Kantumruy", sans-serif;
+  text-align: left;
 }
 .fqa .wrapper .title::after {
   content: "❯";
@@ -451,6 +461,7 @@
   max-height: 0;
   transition: all 0.25s;
   text-align: left;
+  font-family: "Kantumruy", sans-serif;
 }
 .fqa .wrapper input:checked + .title:after {
   transform: rotate(90deg);
@@ -482,14 +493,16 @@
   justify-content: center;
 }
 .application .article .img .appstore {
-  width: 50%;
+  width: 80%;
+  cursor: pointer;
 }
 .application .article .img .appstore img {
   width: 100%;
 }
 .application .article .img .playstore {
-  width: 50%;
+  width: 80%;
   margin-left: 50px;
+  cursor: pointer;
 }
 .application .article .img .playstore img {
   width: 100%;
@@ -623,7 +636,7 @@
 
 .copy-right {
   width: 100%;
-  height: 80px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
