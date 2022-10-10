@@ -121,7 +121,7 @@ body .header .nav .navigation {
   list-style: none;
 }
 body .header .nav .navigation li {
-  padding: 15px;
+  padding: 10px;
 }
 body .header .nav .navigation li a {
   text-decoration: none;
@@ -491,7 +491,12 @@ body .copy-right a {
     display: block;
   }
   body .body-content .spec {
-    display: block;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  body .body-content .spec .image {
+    width: 100%;
+    justify-content: center;
   }
   body .body-content .article {
     width: 100%;
@@ -510,6 +515,9 @@ body .copy-right a {
   }
   body .body-content .image img {
     margin: 50px 0;
+  }
+  body .company-detail {
+    width: 100%;
   }
   body .company-detail .background {
     width: 100%;
@@ -533,6 +541,7 @@ body .copy-right a {
     background-size: cover;
   }
   .footer {
+    width: 100%;
     display: flex;
     flex-direction: column;
   }

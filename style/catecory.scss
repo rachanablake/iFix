@@ -151,7 +151,7 @@ body{
                 list-style: none;
 
                 li{
-                    padding: 15px;
+                    padding: 10px;
         
                     a{
                         text-decoration: none;
@@ -561,6 +561,7 @@ body{
 @media only screen and (max-width: 820px){
 
     body{
+
         .header{
             width: 100%;
             margin: auto;
@@ -649,7 +650,13 @@ body{
             }
 
             .spec{
-                display: block;
+                display: flex;
+                flex-direction: column-reverse;
+
+                .image{
+                    width: 100%;
+                    justify-content: center;
+                }
             }
 
             .article{
@@ -678,6 +685,7 @@ body{
         }
     
         .company-detail{
+            width: 100%;
             .background{
                 width: 100%;
                 display: block;
@@ -709,6 +717,7 @@ body{
     }
 
     .footer{
+        width: 100%;
         display: flex;
         flex-direction: column;
 
